@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.appdeveloperblog.ws.model.response.UserRest;
 import com.appdeveloperblog.ws.service.UserService;
 import com.appdeveloperblog.ws.shared.dto.UserDto;
 import com.appdeveloperblog.ws.ui.model.request.UserDetailsRequestModel;
+import com.appdeveloperblog.ws.ui.model.response.UserRest;
 
 @RestController
 @RequestMapping("users") // http://localhost:8080/users

@@ -1,4 +1,4 @@
-package com.appdeveloperblog.ws.model.response;
+package com.appdeveloperblog.ws.ui.model.response;
 
 public class UserRest {
 	//conver Java class into JSON response and contains user info that is
