@@ -7,8 +7,9 @@ import com.appdeveloperblog.ws.io.entity.UserEntity;
 
 @Repository
 public interface UserRepository extends CrudRepository<UserEntity, Long> {
-	// we give user entity to save to database
+	// we give user entity to save into database
 	// Spring Data JPA created ready to use methods 
 	UserEntity findByEmail(String email);
+	UserEntity findByUserId(String userId);
 
 }
