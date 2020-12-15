@@ -31,6 +31,8 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 		.addFilter(getAuthenticationFilter())
 		.addFilter(new AuthorizationFilter(authenticationManager()))
 		.sessionManagement()
+		// Configure Web Security to tell Spring not to create http session
+		// And this will make are API stateless
 		.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 	}
 	
